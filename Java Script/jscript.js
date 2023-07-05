@@ -7,6 +7,10 @@ menuBtn.onclick = () => {
     navbar.classList.toggle('active');
 };
 
+// remove menubtn on navbar click-----------
+menuBtn.classList.remove('active');
+navbar.classList.remove('bx-x');
+
 
 
 // Type Animation---------------
@@ -56,6 +60,4 @@ window.onscroll = () => {
 };
 
 
-// remove menubtn on navbar click-----------
-menuBtn.classList.remove('bx-x');
-navbar.classList.remove('active');
+
