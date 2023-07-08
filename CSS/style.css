@@ -20,12 +20,9 @@
     --main-color: darkorange;
 }
 
-a {
-    color: var(--text-color);
-}
-
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
@@ -47,17 +44,17 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 10%;
+    padding: 2rem 9%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    z-index: 100;
 }
 
 .logo {
-    font-size: 2.8rem;
+    color: var(--text-color);
+    font-size: 2.5rem;
     font-weight: 600;
-    letter-spacing: .3rem;
     cursor: default;
     transition: .5s ease;
 }
@@ -72,12 +69,10 @@ section {
 } */
 
 .navbar a {
-    position: relative;
-    font-size: 1.9rem;
-    margin-left: 1rem;
-    letter-spacing: .18rem;
+    font-size: 1.7rem;
+    margin-left: 4rem;
     transition: .5s;
-    padding: .6rem 1.2rem;
+    color: var(--text-color);
 }
 
 .navbar a:hover,
@@ -105,7 +100,7 @@ section {
 }
 
 #menu-btn {
-    font-size: 3rem;
+    font-size: 3.6rem;
     display: none;
     color: var(--main-color);
 }
@@ -237,20 +232,27 @@ span {
 
 /* Services CSS---------------------------------------------------------------------- */
 
-.services {
+/* .services {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .services h2 {
     margin-bottom: 5rem;
 }
 
-.services-content {
+/* .services-content {
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+} */
+.services-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 3rem;
 }
 
@@ -280,7 +282,7 @@ span {
 
 .services-box p {
     font-size: 1.6rem;
-    margin: 1rem 0 2rem;
+    margin: 1rem 0 3rem;
 }
 
 

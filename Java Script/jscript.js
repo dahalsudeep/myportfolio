@@ -1,6 +1,7 @@
 // toggle navigation--------------
 let menuBtn = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.navbar');
+let nav = document.querySelector('.navbar a');
 
 menuBtn.onclick = () => {
     menuBtn.classList.toggle('bx-x');
@@ -8,8 +9,10 @@ menuBtn.onclick = () => {
 };
 
 // remove menubtn on navbar click-----------
-menuBtn.classList.remove('active');
-navbar.classList.remove('bx-x');
+
+    menuBtn.classList.remove('active');
+    navbar.classList.remove('bx-x');
+
 
 
 
