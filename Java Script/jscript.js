@@ -1,17 +1,14 @@
 // toggle navigation--------------
 let menuBtn = document.querySelector('#menu-btn');
 let navbar = document.querySelector('.navbar');
-let nav = document.querySelector('.navbar a');
+
 
 menuBtn.onclick = () => {
     menuBtn.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 };
 
-// remove menubtn on navbar click-----------
 
-    menuBtn.classList.remove('active');
-    navbar.classList.remove('bx-x');
 
 
 
@@ -60,7 +57,21 @@ window.onscroll = () => {
             });
         };
     });
+
+    // sticky navigation------------------
+
+let header = document.querySelector('header');
+
+header.classList.toggle('sticky', window.scrollY> 100);
+
+// remove menubtn on navbar click-----------
+
+menuBtn.classList.remove('bx-x');
+navbar.classList.remove('active');
+
 };
+
+
 
 
 
