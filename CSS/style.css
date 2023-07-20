@@ -240,22 +240,11 @@ span {
 
 /* Services CSS---------------------------------------------------------------------- */
 
-/* .services {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
 
 .services h2 {
     margin-bottom: 5rem;
 }
 
-/* .services-content {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 3rem;
-} */
 .services-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
